@@ -81,16 +81,18 @@ public class HomeController {
 	@RequestMapping(value = "/table/add", method = RequestMethod.GET)
 	public String add(Locale locale, Model model,HttpServletRequest request) {
 		
-		int x = Integer.parseInt(request.getParameter("ii1"));
-		int y = Integer.parseInt(request.getParameter("ii2"));
-		int z = Integer.parseInt(request.getParameter("ii3"));
+		int ff = Integer.parseInt(request.getParameter("ii1"));
+		int ss = Integer.parseInt(request.getParameter("ii2"));
+		int dd = Integer.parseInt(request.getParameter("ii3"));
 		
 		int ad = 0;
-		ad = x+y+z;
+		ad = ff+ss+dd;
 		
 		model.addAttribute("rslt" , ad);
 		
 		return "table";
 	}
+	
+	// i am writing some stuff 
 	
 }
